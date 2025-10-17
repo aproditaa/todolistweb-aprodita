@@ -1,0 +1,117 @@
+/*  General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Table */
+.todo-row {
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.todo-row:hover {
+    background-color: #fdf2f8;
+}
+
+.todo-row.completed {
+    opacity: 0.5;
+}
+
+.todo-row.completed .task-text {
+    text-decoration: line-through;
+}
+
+/* Filter Button */
+.filter-btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #f3f4f6;
+    color: #6b7280;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: #e5e7eb;
+}
+
+.filter-btn.active {
+    background-color: #ec4899;
+    color: white;
+}
+
+/* Action Button */
+.btn-edit {
+    padding: 6px 12px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.btn-edit:hover {
+    background-color: #2563eb;
+}
+
+.btn-delete {
+    padding: 6px 12px;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.btn-delete:hover {
+    background-color: #dc2626;
+}
+
+/* Status */
+.status-completed {
+    padding: 4px 12px;
+    background-color: #d1fae5;
+    color: #059669;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-pending {
+    padding: 4px 12px;
+    background-color: #fef3c7;
+    color: #d97706;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Error */
+.error-text {
+    color: #ef4444;
+    font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    table {
+        font-size: 13px;
+    }
+    
+    th, td {
+        padding: 8px !important;
+    }
+    
+    .btn-edit, .btn-delete {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+}
